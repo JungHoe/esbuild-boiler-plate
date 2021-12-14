@@ -33,6 +33,7 @@ const { pnpPlugin } = require("@yarnpkg/esbuild-plugin-pnp");
     // Uses `PORT=...` or 8080 as a fallback.
     port: +process.env.PORT || 8080,
     // Uses `public` as the local server folder.
+    file: "index.html",
     root: "public",
   });
 })();
